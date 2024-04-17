@@ -1,8 +1,8 @@
-const {getTodoslivros, getLivroPorId, insereLivro} = require ("../servico/livro")
+const {getLivroPorId, insereLivro, getTodosLivros} = require ("../servico/livro")
 
 function getLivros (req, res)  {
   try {
-    const livros = getTodoslivros()
+    const livros = getTodosLivros()
       res.send(livros)
   } catch (error) {
       res.status(500)
@@ -13,7 +13,7 @@ function getLivro (req, res)  {
   try {
     const id = req.params.id
     const livro = getLivroPorId(id)
-      res.send(livros)
+      res.send(livro)
   } catch (error) {
       res.status(500)
       res.send(error.message)
