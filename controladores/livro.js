@@ -1,8 +1,18 @@
-const fs = require("fs")
+const {getTodoslivros, getLivroPorId} = require ("../servico/livro")
 
 function getLivros (req, res)  {
   try {
-    const livros = JSON.parse(fs.readFileSync("livros.json"))
+    const livros = getTodoslivros()
+      res.send(livros)
+  } catch (error) {
+      res.status(500)
+      res.send(error.message)
+  }
+}
+function getLivro (req, res)  {
+  try {
+    const id = req.params.id
+    const livro = getLivroPorId(id)
       res.send(livros)
   } catch (error) {
       res.status(500)
@@ -11,5 +21,6 @@ function getLivros (req, res)  {
 }
 
 module.exports = {
-  getLivros
+  getLivros,
+  getLivro
 }
