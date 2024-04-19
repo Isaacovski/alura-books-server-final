@@ -41,8 +41,6 @@ function postLivro(req, res) {
   }
 }
 
-//código omitido
-
 function patchLivro(req, res) {
   try {
       const id = req.params.id
@@ -62,25 +60,15 @@ function patchLivro(req, res) {
   }
 }
 
-//código omitido
-
-//código omitido
-
 function deleteLivro(req, res) {
-  try {
-      const id = req.params.id
-
-      if(id && Number(id)) {
-          deletaLivroPorId(id)
-          res.send("livro deletado com sucesso")
-      } else {
-          res.status(422)
-          res.send("ID inválido")
-      }
-  } catch (error) {
-      res.status(500)
-      res.send(error.message)
-  } 
+    try {
+        const id = req.params.id
+        deletarLivroPorId(id)
+        res.send("livro deletado com sucesso")
+    } catch (error) {
+        res.status(500)
+        res.send(error.message)
+    }
 }
 
 //código omitido
