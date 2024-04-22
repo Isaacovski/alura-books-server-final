@@ -1,10 +1,1 @@
-[
-  {
-    "id": "1",
-    "nome": "Livro inserido teste 1"
-  },
-  {
-    "id": "1",
-    "nome": "Livro inserido teste 2"
-  }
-]
+[{"id":"1","nome":"Livro inserido teste 1"},{"id":"1","nome":"Livro inserido teste 2"},{"id":"2","nome":"esse livro foi inserido compost "}]
