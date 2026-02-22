@@ -1,14 +1,8 @@
-## ⚙️ Back End
+### Api criada do zero com Js Puro
+o projeto veio de um curso da alura onde o front end "uma biblioteca" iria registar postar deletar e mudar livros 
+essa e uma das apis mas bem feitas e trabalhadas que eu possuo 
+eu criei uma ilustração para que não fique embaralhado o funcionamento dela 
 
-O back end foi construído **100% em JavaScript puro**, com rotas, controladores e toda a lógica da API feita manualmente.  
-
-A API controla os livros e oferece as seguintes funcionalidades:  
-
-- Listar livros (**GET**)  
-- Adicionar livros (**POST**)  
-- Modificar livros (**PUT**)  
-- Apagar livros (**DELETE**)  
-
-Os dados eram armazenados em um **arquivo JSON**, deixando o site leve e rápido.  
-
-> Foi nesse projeto que usei o **Postman** pela primeira vez e criei minha primeira API. Infelizmente, os arquivos do back end foram perdidos 😅  
+### ilustração 
+fiz pelo tldraw
+<img width="760" height="420" alt="Capturar" src="https://github.com/user-attachments/assets/b89be9f9-68ab-4a01-97ed-9be3563c76ec" />
